@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"><!---->
     <data>
+
         <variable
             name="mainviewmodel"
             type="com.pjx.mvvmdemo.model.MainViewModel" />
     </data>
 
     <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/lineroot"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context="com.xpj.mvvm.mvvmlib.Main.MainActivity">
 
+        <VideoView
+            android:id="@+id/myvideoplayer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
+            android:id="@+id/videoplayer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <cn.jzvd.JZVideoPlayerStandard
+            android:id="@+id/jzplayer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            />
         <Button
             android:id="@+id/bt_retry"
             android:layout_width="wrap_content"

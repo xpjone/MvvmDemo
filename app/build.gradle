@@ -1,12 +1,13 @@
 apply plugin: 'com.android.application'
 apply plugin: 'org.greenrobot.greendao'
+
 android {
     defaultConfig {
         applicationId "com.pjx.mvvmdemo.mvvmapplication"
     }
     compileSdkVersion 26
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -37,4 +38,12 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'com.xpj.mvvm:mvvmlib:1.1.1'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.4'
+    implementation 'com.shuyu:gsyVideoPlayer-java:4.1.2'
+    compile 'com.shuyu:gsyVideoPlayer-armv5:4.1.2'
+    compile 'com.shuyu:gsyVideoPlayer-armv7a:4.1.2'
+    compile 'com.shuyu:gsyVideoPlayer-arm64:4.1.2'
+    compile 'com.shuyu:gsyVideoPlayer-x64:4.1.2'
+    compile 'com.shuyu:gsyVideoPlayer-x86:4.1.2'
+    // 视频控件
+    compile 'cn.jzvd:jiaozivideoplayer:6.2.10'
 }

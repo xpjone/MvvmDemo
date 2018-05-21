@@ -2,11 +2,10 @@ package com.pjx.mvvmdemo.view;
 
 import android.annotation.SuppressLint;
 
+import com.pjx.mvvmdemo.R;
 import com.pjx.mvvmdemo.model.MainViewModel;
-import com.pjx.mvvmdemo.mvvmapplication.R;
-import com.pjx.mvvmdemo.mvvmapplication.databinding.DialogMainBinding;
 import com.xpj.mvvm.mvvmlib.base.BaseDialogFragment;
-
+import com.pjx.mvvmdemo.databinding.DialogMainBinding;
 /**
  * @author by xie on 2018/3/2.
  *         更新者：
